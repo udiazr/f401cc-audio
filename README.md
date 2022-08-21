@@ -1,5 +1,5 @@
 # f401cc-audio
-STM32f401cc USB Audio Class Delta-Sigma Digital Audio Amplifier
+BlackPill STM32f401cc USB Audio Class Delta-Sigma Digital Audio Amplifier
 
 An fully digital USB Audio class power audio amplifier.
 48khz Sample rate 14 OSR (672khz PWM)
