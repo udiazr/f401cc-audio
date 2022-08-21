@@ -52,5 +52,6 @@ This introduces a 1% off tune distortion time from time.
 It is barely audible unless you have a good pitch.
 
 TODO:
-I need a start routine to avoid noises at start.
+I need a start/unplug to avoid noises.
+
 
