@@ -8,6 +8,9 @@ An fully digital USB Audio class power audio amplifier.
 Flash:
 Download f401cc.bin then flash it to your device.
 
+Plug it to your PC and a USB STM32f401cc "Virtual COM" sound card  will appear.
+
+
 
 PA8 Left Channel PWM 
 PB14 Right Channel PWM (inverted)
