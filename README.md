@@ -10,6 +10,8 @@ Download f401cc.bin then flash it to your device.
 
 Plug it to your PC and a USB STM32f401cc "Virtual COM" sound card  will appear.
 
+Connect the PWM outputs to your halfbridges.
+
 
 
 PA8 Left Channel PWM 
