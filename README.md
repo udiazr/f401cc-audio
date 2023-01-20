@@ -53,5 +53,6 @@ It is barely audible unless you have a good pitch.
 
 TODO:
 I need a start/unplug to avoid noises.
+Sometimes produces noises, reset it.
 
 
