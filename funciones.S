@@ -39,7 +39,7 @@ df403:
    /*   //   xxx[6]=audio[i+1]*5; */
 	/*   xxx[10]=(127*(int)xxx[10]+(int)xxx[2])>>7; */
 	
-	mov r7,#14
+	mov r7,#10
 df402:
 	vmul.f32  s31,s0,s17
 	vmla.f32  s31,s1,s18
@@ -66,9 +66,9 @@ df402:
 	vadd.f32  s31,s3,s0
 	vcvtr.s32.f32 s31,s31
 	vmov  r6,s31
-	add   r6,#63
+	add   r6,#125
 	strh  r6,[r2,r3]
-	sub   r6,#63
+	sub   r6,#125
 	vmov  s31,r6
 	vcvtr.f32.s32 s4,s31
 	add   r3,#2
@@ -77,35 +77,35 @@ df402:
 
 
 
-/*	vmul.f32  s31,s5,s17
-	vmla.f32  s31,s6,s18
-	vmla.f32  s31,s7,s19
-	vmla.f32  s31,s8,s20
-	vmla.f32  s31,s9,s21
+	;; vmul.f32  s31,s5,s17
+	;; vmla.f32  s31,s6,s18
+	;; vmla.f32  s31,s7,s19
+	;; vmla.f32  s31,s8,s20
+	;; vmla.f32  s31,s9,s21
 
-	vmul.f32  s30,s5,s22
-	vmla.f32  s30,s6,s23
-	vmla.f32  s30,s7,s24
-	vmla.f32  s30,s8,s25
-	vmla.f32  s30,s9,s26
+	;; vmul.f32  s30,s5,s22
+	;; vmla.f32  s30,s6,s23
+	;; vmla.f32  s30,s7,s24
+	;; vmla.f32  s30,s8,s25
+	;; vmla.f32  s30,s9,s26
 
-	vmul.f32  s15,s5,s27
-	vmla.f32  s15,s6,s28
-	vmla.f32  s15,s7,s29
-	vsub.f32  s15,s15,s8
-	vadd.f32  s15,s15,s9
+	;; vmul.f32  s15,s5,s27
+	;; vmla.f32  s15,s6,s28
+	;; vmla.f32  s15,s7,s29
+	;; vsub.f32  s15,s15,s8
+	;; vadd.f32  s15,s15,s9
 
-	vmov      s5,s31
-	vmov      s6,s30
-	vmov      s7,s15
+	;; vmov      s5,s31
+	;; vmov      s6,s30
+	;; vmov      s7,s15
 
-	vadd.f32  s31,s8,s5
-	vcvtr.s32.f32 s31,s31
-	vmov  r6,s31
-	add   r6,#63*/
-	mov   r6,#63
+	;; vadd.f32  s31,s8,s5
+	;; vcvtr.s32.f32 s31,s31
+	;; vmov  r6,s31
+	;; add   r6,#125
+	mov   r6,#125
 	strh  r6,[r2,r3]
-	sub   r6,#63
+	sub   r6,#125
 	vmov  s31,r6
 	vcvtr.f32.s32 s9,s31
 	add   r3,#2
@@ -132,16 +132,16 @@ df402:
 //	vcvtr.f32.s32 s7,s29
 	add   r3,#2*/
 
-/*	vsub.f32 s31,s10,s11
+	vsub.f32 s31,s10,s11
 	vadd.f32 s8,s8,s31
 	vsub.f32 s31,s8,s11
 	vadd.f32 s9,s9,s31
 	vcvtr.s32.f32 s31,s9
 	vmov  r6,s31
-	add   r6,#63  */
-	mov   r6,#63
+	add   r6,#125
+	mov   r6,#125
 	strh  r6,[r2,r3]
-	sub   r6,#63
+	sub   r6,#125
 //	vmov  s29,r6
 //	vcvtr.f32.s32 s11,s29
 	add   r3,#2
@@ -166,7 +166,6 @@ df499:
 	vstmia r0,{s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12,s13}
 	add sp,#128
 	pop    {r3, r4, r5, r6, r7, pc}
-
 
 
 
@@ -210,7 +209,7 @@ df303:
    /*   //   xxx[6]=audio[i+1]*5; */
 	/*   xxx[10]=(127*(int)xxx[10]+(int)xxx[2])>>7; */
 	
-	mov r7,#14
+	mov r7,#10 // OSR
 df302:
 	vmul.f32  s31,s0,s12
 	vmla.f32  s31,s1,s13
@@ -225,9 +224,9 @@ df302:
 	vmov.f32  s1,s30
 	vcvtr.s32.f32 s29,s29
 	vmov  r6,s29
-	add   r6,#63
+	add   r6,#125 //half
 	strh  r6,[r2,r3]
-	sub   r6,#63
+	sub   r6,#125
 	vmov  s29,r6
 	vcvtr.f32.s32 s3,s29
 	add   r3,#2
@@ -245,9 +244,9 @@ df302:
 	vmov.f32  s5,s30
 	vcvtr.s32.f32 s29,s29
 	vmov  r6,s29
-	add   r6,#63
+	add   r6,#125
 	strh  r6,[r2,r3]
-	sub   r6,#63
+	sub   r6,#125
 	vmov  s29,r6
 	vcvtr.f32.s32 s7,s29
 	add   r3,#2
@@ -258,9 +257,9 @@ df302:
 	vadd.f32 s9,s9,s31
 	vcvtr.s32.f32 s31,s9
 	vmov  r6,s31
-	add   r6,#63
+	add   r6,#125
 	strh  r6,[r2,r3]
-	sub   r6,#63
+	sub   r6,#125
 	vmov  s29,r6
 	vcvtr.f32.s32 s11,s29
 	add   r3,#2
