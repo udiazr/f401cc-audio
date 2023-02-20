@@ -42,7 +42,7 @@ Maybe you can use it with irs2011 with a pair of transistors to get much more po
 
 
 ## Build:
-- Load f401-audio project to STM32CubeMX and generate all source files.
+- Load f401-audio.ioc project to STM32CubeMX and generate all source files.
 - Copy funciones.S and Makefile to your project folder
 - Copy usbd_audio_if.c to your USB_DEVICE/App/ folder
 - Copy usbd_audio.h to Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc/
