@@ -1,8 +1,12 @@
 # f401cc-audio
+
 BlackPill STM32f401cc USB Audio Class Delta-Sigma Digital Audio Amplifier
 
+This amplifier overclocks your STM32f401 to 120MHz. Maybe you need to reset the device to be works.
+I think its much cleaner the sound now.
+
 An fully digital USB Audio class power audio amplifier.
-48khz Sample rate 14 OSR (672khz PWM)
+48khz Sample rate 10 OSR (480khz PWM)
 2-order delta sigma modulation.
 
 Flash:
@@ -13,11 +17,10 @@ Plug it to your PC and a USB STM32f401cc "Virtual COM" sound card  will appear.
 Connect the PWM outputs to your halfbridges.
 
 
-
-PA8 Left Channel PWM 
-PB14 Right Channel PWM (inverted)
-PA10 Subwoofer PWM
-PB15 Subwoofer PWM (inverted)
+The complementary outputs are:
+PA8/PB13 Left Channel 
+PA9/PB14 Right Channel 
+PA10/PB15 Subwoofer PWM
 
 +-------------------STM32F401CC--------------------+
 | +-----------+   +---------------+    +---------+ |  +-----------------+   +-----------+  +----------+
