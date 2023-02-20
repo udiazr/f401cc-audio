@@ -54,6 +54,7 @@ This introduces a 0.5% off tune distortion time from time.
 It is barely audible unless you have a good pitch.
 
 ### TODO:
+Utilize two Timers to avoid crosstalk between the channel (tracks are too close)
 I need a start/unplug to avoid noises.
 Sometimes produces noises, reset it.
 
