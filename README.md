@@ -2,7 +2,8 @@
 
 BlackPill STM32f401cc USB Audio Class Delta-Sigma Digital Audio Amplifier
 
-This amplifier overclocks your STM32f401 to 120MHz. Maybe you need to reset the device to be works.
+This amplifier overclocks your STM32f401 to 120MHz. 
+Maybe you need to reset the device to work.
 I think its much cleaner the sound now.
 
 An fully digital USB Audio class power audio amplifier.
