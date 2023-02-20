@@ -1,4 +1,4 @@
-# f401cc-audio Blackpill Class-D audio amplifier
+# f401cc-audio 2.1 Blackpill Class-D audio amplifier
 
 BlackPill STM32f401cc 2.1 USB Audio Class Delta-Sigma Digital Audio Amplifier
 
