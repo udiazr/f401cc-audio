@@ -1,4 +1,5 @@
 # f401cc-audio 2.1 Blackpill Class-D audio amplifier
+[![YoutubeVideo](https://img.youtube.com/vi/Q_hg8kxJaRE/0.jpg)](https://www.youtube.com/watch?v=Q_hg8kxJaRE)
 
 BlackPill STM32f401cc 2.1 USB Audio Class Delta-Sigma Digital Audio Amplifier
 
